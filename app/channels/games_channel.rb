@@ -14,5 +14,5 @@ class GamesChannel < ApplicationCable::Channel
     game.update!(array: data["array"])
     ActionCable.server.broadcast('games', data)
   end
-  
+
 end
