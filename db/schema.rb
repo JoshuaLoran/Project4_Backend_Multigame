@@ -19,7 +19,7 @@ ActiveRecord::Schema.define(version: 2019_05_02_195621) do
     t.string "name"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
-    t.integer "array", default: [], array: true
+    t.json "array", default: [], array: true
   end
 
   create_table "usergames", force: :cascade do |t|
