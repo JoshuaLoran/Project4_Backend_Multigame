@@ -1,5 +1,5 @@
 class ApplicationController < ActionController::API
-  before_action :authorized
+  # before_action :authorized
   #user always has to be authorized except for when creating account
   skip_before_action :authorized, only: [:create]
   ALGORITHM = 'HS256' #to be used throughout auth process
