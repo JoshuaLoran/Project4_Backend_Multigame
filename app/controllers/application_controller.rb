@@ -39,14 +39,14 @@ class ApplicationController < ActionController::API
   end
 
   def encode_token(payload)
-    JWT.encode(payload, 'ad06d21b70b1fdd63ea36f59a7735221448d4d2a4eb53212f4d9780adfc03714d103c4106f5023b1fb3f673cde036ded8e6731fe84d9475e7db654915d66ccba')
+    JWT.encode(payload, ENV["my_secret"])
   end
 
   def decoded_token #accesses the token, gets token as string
     if auth_header
       token = auth_header.split(' ')[1]
       begin
-        JST.decode(token, my_secret, true, ALGORITHM)
+        JWT.decode(token, ENV["my_secret"], true, ALGORITHM)
       rescue JWT::DecodeError
         nil #if bad token received, nil will be returned instead of crashing server
       end
