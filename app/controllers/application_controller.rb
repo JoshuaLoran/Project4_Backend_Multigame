@@ -20,7 +20,7 @@ class ApplicationController < ActionController::API
   def authorized
     #going to send back JSON telling user to log in, unless they are logged in
     #calls logged_in method to check for login status
-    render json: { message: 'Please log in' }, status: :unauthorized unless logged_in
+    render json: { message: 'Invalid Username or Password' }, status: :unauthorized unless logged_in
   end
 
   def logged_in
@@ -46,7 +46,7 @@ class ApplicationController < ActionController::API
     if auth_header
       token = auth_header.split(' ')[1]
       begin
-        JWT.decode(token, ENV["my_secret"], true, ALGORITHM)
+        JWT.decode(token, ENV["my_secret"], true, algorithm: ALGORITHM)
       rescue JWT::DecodeError
         nil #if bad token received, nil will be returned instead of crashing server
       end
