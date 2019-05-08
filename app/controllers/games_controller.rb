@@ -46,6 +46,6 @@ class GamesController < ApplicationController
 
     # Only allow a trusted parameter "white list" through.
     def game_params
-      params.require(:game).permit(:name, :array, :id)
+      params.require(:game).permit(:name, :array, :id, :winner)
     end
 end

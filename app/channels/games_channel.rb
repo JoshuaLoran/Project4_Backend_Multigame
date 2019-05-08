@@ -12,6 +12,7 @@ class GamesChannel < ApplicationCable::Channel
     # find, update, and broadcast the game in the DB
     game = Game.find(data["id"])
     game.update!(array: data["array"])
+    game.update!(winner: data["winner"])
     ActionCable.server.broadcast('games', data)
   end
 
