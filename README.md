@@ -27,6 +27,6 @@ This project is hosted on Heroku and can be accessed here:
 #### Time allocated: 4 days
 
 ## Link to Frontend Repository:
-![Frontend Repository](https://github.com/WTFCodingPotato/Project4_Frontend_Multigame)
+[Frontend Repository](https://github.com/WTFCodingPotato/Project4_Frontend_Multigame)
 
 ## Database Schema Diagram
