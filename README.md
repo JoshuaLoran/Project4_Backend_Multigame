@@ -30,3 +30,4 @@ This project is hosted on Heroku and can be accessed here:
 [Frontend Repository](https://github.com/WTFCodingPotato/Project4_Frontend_Multigame)
 
 ## Database Schema Diagram
+![Database Diagram](https://github.com/WTFCodingPotato/Project4_Backend_Multigame/blob/master/Screen%20Shot%202019-05-08%20at%204.13.53%20PM.png)
