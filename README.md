@@ -1,24 +1,35 @@
-# README
+# Farm Frenzy - Backend
+## Play Live Games Online Against Other Players
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+#### Joshua Loran and Molly Nemerever
 
-Things you may want to cover:
+###### Project completed as part of [Flatiron School](https://flatironschool.comcampuses/seattle/) curriculum.
 
-* Ruby version
+[project gif]
 
-* System dependencies
+## Project FAQ
+#### 1. What is Farm Frenzy?
+Farm Frenzy is an online gaming platform. Players can sign in and play live games against other users. 
+As of 5/8/19 the only game option is tic tac toe. In the future we hope to add various options such as Minesweeper, Connect 4, Simon and Trivia.
 
-* Configuration
+#### 2. How does it work?
+After creating an account, users can select a game to play as well as their desired icon for that game.  Users will be matched with another player who has selected the same game.  Games will be updated in real time on each player's screen. 
 
-* Database creation
+## Access Instructions
+This project is hosted on Heroku and can be accessed here: 
 
-* Database initialization
+## Project Requirements
+1.	Create a fully functioning application.
+2.	Build a Rails backend, paired with a React frontend.
+3.  Maintain your backend and frontend in different GitHub repositories.
+3.	Build a database schema (using Postgres).
+5.	Utilize fetch requests to completed CRUD.
 
-* How to run the test suite
+#### Time allocated: 4 days
 
-* Services (job queues, cache servers, search engines, etc.)
+## Link to Frontend Repository:
+[Frontend Repository](https://github.com/WTFCodingPotato/Project4_Frontend_Multigame)
 
-* Deployment instructions
-
-* ...
+## Database Schema Diagram
+As of 5/8/19 the User_Games table is not utilized. As soon as multiple games are offered within Farm Frenzy, this table will be used to store the user/games relationships. 
+![Database Diagram](https://github.com/WTFCodingPotato/Project4_Backend_Multigame/blob/master/Screen%20Shot%202019-05-08%20at%204.13.53%20PM.png)
